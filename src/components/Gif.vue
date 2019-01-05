@@ -1,12 +1,12 @@
 <template>
   <div class="has-text-centered">
     <div class="gif-container" ref="gifContainer">
-    	<div class="gif-overlay" v-if="is_playing == false && is_loaded == true" @click="play()">
-    		<div class="gif-text">Gif</div>
-    	</div>
-    	<div class="gif-image" @click="stop()">
-	    	<img :src="src" ref="gif"/>
-	    </div>
+      <div class="gif-overlay" v-if="is_playing == false && is_loaded == true" @click="play()">
+        <div class="gif-text">Gif</div>
+      </div>
+      <div class="gif-image" @click="stop()">
+        <img :src="src" ref="gif"/>
+      </div>
     </div>
     </div>
 </template>
@@ -42,14 +42,14 @@ export default {
     });
   },
   methods: {
-  	play() {
-  		this.rub.play()
-  		this.is_playing = true
-  	},
-  	stop() {
-  		this.rub.pause()
-  		this.is_playing = false
-  	}
+    play() {
+      this.rub.play()
+      this.is_playing = true
+    },
+    stop() {
+      this.rub.pause()
+      this.is_playing = false
+    }
   }
 }
 </script>
