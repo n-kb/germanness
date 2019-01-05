@@ -95,10 +95,19 @@
       // Gets current lang
       var current_url = window.location.href
       var lang = "en"
+      var available_langs = ["en", "fr", "de"]
       if (current_url.match(/\/[a-z]{2}\//)) {
         lang = current_url.match(/\/[a-z]{2}\//)[0].replace("/", "").replace("/", "")
+        this.changeLocale(lang)
+      } else {
+        var user_lang = navigator.language
+        user_lang = user_lang.split("-")[0]
+        if (available_langs.indexOf(user_lang) != -1) {
+          this.changeLocale(user_lang)
+        } else {
+          this.changeLocale(lang)
+        }
       }
-      this.changeLocale(lang)
     },
     methods: {
       changeLocale(lang) {
