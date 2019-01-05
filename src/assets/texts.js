@@ -85,7 +85,7 @@ const messages = {
         {
             title: "Germans have a protestant work ethic",
             img: "religion_en.png",
-            content: `Germany has been split evenly between Catholic and Protestants since 1945 (and Catholics outnumber Protestants since the mid-1990s). If you hear anyone linking Protestantism with today's Germany or Germanness, you should probably shut him or her up.
+            content: `Germany has been split evenly between Catholic and Protestants since 1945 (and Catholics outnumber Protestants since the mid-1990s). If you hear anyone linking Protestantism with today's Germany or Germanness, show them this graph.
 `
         },
         {
