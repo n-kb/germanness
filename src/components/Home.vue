@@ -39,8 +39,8 @@
                 <div v-for="item in $t('items')">
                   <h2 v-html="item.title"></h2>
                   <p v-html="item.content"></p>
-                  <gif :src="`/${item.gif}`" v-if="item.gif" />
-                  <img :src="`/${item.img}`" v-if="item.img" />
+                  <gif :src="`https://blog.nkb.fr/germanness/${item.gif}`" v-if="item.gif" />
+                  <img :src="`https://blog.nkb.fr/germanness/${item.img}`" v-if="item.img" />
                   <hr/>
                 </div>
                 <article class='message is-link' id='newsletter'>
