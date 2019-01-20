@@ -4,20 +4,6 @@ const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const path = require('path');
 
 module.exports = {
-	chainWebpack: config => {
-		config
-		.module
-		.rule("csv")
-		.test(/\.csv$/)
-		.use("csv-loader")
-		.loader("csv-loader")
-		.options({
-			dynamicTyping: true,
-			header: true,
-			skipEmptyLines: true
-		})
-		.end();
-	},
 	configureWebpack: config => {
 	    if (process.env.NODE_ENV !== 'prerender') return;
 	    return {
