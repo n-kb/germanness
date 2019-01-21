@@ -19,9 +19,9 @@ module.exports = {
 	            sortAttributes: true,
 	          },
 	          renderer: new Renderer({
-	            renderAfterElementExists: '#app',
-	            //renderAfterTime: 20000,
-	            //headless: false
+	            //renderAfterElementExists: '#app'
+	            renderAfterTime: 20000,
+	            headless: false
 	          }),
 	        }),
 	      ],
